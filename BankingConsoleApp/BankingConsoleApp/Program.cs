@@ -1,12 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-
-namespace Banking
-{
-    class App
-    {
-        public static void Main()
-        {
+     //top level statements
             Console.WriteLine("Rocking with c#");
             //create customer object
             //global using scope
@@ -25,6 +19,4 @@ namespace Banking
             //int length = value.Length;
             //Console.WriteLine("Value Lenght {0}", length);
             Console.ReadKey();
-        }
-    }
-}
+        

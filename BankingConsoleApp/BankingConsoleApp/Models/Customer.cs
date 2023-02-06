@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 //file scoped namespace
 namespace BankingConsoleApp.Models;
 
-
-
+  
     public record Customer
     {
         public long CustomerId { get; init; }
