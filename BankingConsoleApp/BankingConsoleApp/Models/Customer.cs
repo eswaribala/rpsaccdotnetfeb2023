@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BankingConsoleApp.Models
 {
-    public class Customer
+    public record Customer
     {
-        public long CustomerId { get; set; }
-        public string? Name { get; set; }
-        public DateTime DOB { get; set; }
+        public long CustomerId { get; init; }
+        public string? Name { get; init; }
+        public DateTime DOB { get; init; }
 
     }
 }

@@ -9,10 +9,14 @@ namespace Banking
         {
             Console.WriteLine("Rocking with c#");
             //create customer object
-            Customer customer = new Customer();
-            customer.CustomerId = 428584;
-            customer.Name = "Parameswari";
-            customer.DOB = new DateTime(1970,12,2);
+            Customer customer = new Customer
+            {
+                CustomerId = new Random().Next(10000),
+                Name = "Parameswari",
+                DOB = new DateTime(1970, 12, 2)
+            };
+            //immutable
+            //customer.CustomerId = 3876573;
             Console.WriteLine("CustomerId={0},Customer Name={1},DOB={2}",
                 customer.CustomerId,customer.Name,customer.DOB);
             Console.ReadKey();
