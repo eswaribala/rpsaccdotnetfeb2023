@@ -17,6 +17,11 @@ namespace CustomerAPI.Models
         [Column("City")]
         public string? City { get; set; }
         [Column("PostalCode")]
-        public int? PostalCode { get; set; }    
+        public int? PostalCode { get; set; }   
+        
+        [ForeignKey("CustomerId")]
+        [Column("CustomerId_FK")]
+        public long CustomerId { get; set; }
+        public Customer? Customer { get; set; }
     }
 }
