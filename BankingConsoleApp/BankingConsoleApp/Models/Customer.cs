@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//file scoped namespace
+namespace BankingConsoleApp.Models;
 
-namespace BankingConsoleApp.Models
-{
 
 
     public record Customer
@@ -15,4 +15,4 @@ namespace BankingConsoleApp.Models
         public DateTime DOB { get; init; }
 
     }
-}
+

@@ -9,6 +9,7 @@ namespace Banking
         {
             Console.WriteLine("Rocking with c#");
             //create customer object
+            //global using scope
             Customer customer = new Customer
             {
                 CustomerId = new Random().Next(10000),
