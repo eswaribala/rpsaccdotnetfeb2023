@@ -1,0 +1,15 @@
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\bin\Debug\net6.0\BankingConsoleApp.exe
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\bin\Debug\net6.0\BankingConsoleApp.deps.json
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\bin\Debug\net6.0\BankingConsoleApp.runtimeconfig.json
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\bin\Debug\net6.0\BankingConsoleApp.dll
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\bin\Debug\net6.0\BankingConsoleApp.pdb
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\obj\Debug\net6.0\BankingConsoleApp.csproj.AssemblyReference.cache
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\obj\Debug\net6.0\BankingConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\obj\Debug\net6.0\BankingConsoleApp.AssemblyInfoInputs.cache
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\obj\Debug\net6.0\BankingConsoleApp.AssemblyInfo.cs
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\obj\Debug\net6.0\BankingConsoleApp.csproj.CoreCompileInputs.cache
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\obj\Debug\net6.0\BankingConsoleApp.dll
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\obj\Debug\net6.0\refint\BankingConsoleApp.dll
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\obj\Debug\net6.0\BankingConsoleApp.pdb
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\obj\Debug\net6.0\BankingConsoleApp.genruntimeconfig.cache
+G:\Local disk\AccentureTrainingFeb2023\BankingConsoleApp\BankingConsoleApp\obj\Debug\net6.0\ref\BankingConsoleApp.dll
