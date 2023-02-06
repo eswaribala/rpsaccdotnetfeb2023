@@ -1,0 +1,8 @@
+dotnet sdk check
+dotnet --help
+#create new project
+dotnet new console
+#build the project
+dotnet build
+#run the project
+dotnet run
