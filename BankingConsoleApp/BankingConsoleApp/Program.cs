@@ -19,9 +19,10 @@ namespace Banking
             //customer.CustomerId = 3876573;
             Console.WriteLine("CustomerId={0},Customer Name={1},DOB={2}",
                 customer.CustomerId,customer.Name,customer.DOB);
+           //Nullability test
             string? value = null;
-            int length = value.Length;
-            Console.WriteLine("Value Lenght {0}", length);
+            //int length = value.Length;
+            //Console.WriteLine("Value Lenght {0}", length);
             Console.ReadKey();
         }
     }
