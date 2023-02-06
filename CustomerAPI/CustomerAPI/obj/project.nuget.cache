@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "i3SNsFchHXA8huMB9CU/eb+mezvs5xWUEj52+NcqhG+mpIOhYWd0oX6LbfUiU4udwqMvJ1Zxpywkdqjri1QdOg==",
+  "dgSpecHash": "278quV5oCo4xgV74gP3/tH3b9GGOrRqlTeMq4p7xLw2DfZ65oXmIWuLpmcHMEFp4QzBfRYZDoXJbJR1VFtCfGA==",
   "success": true,
   "projectFilePath": "G:\\Local disk\\AccentureTrainingFeb2023\\CustomerAPI\\CustomerAPI\\CustomerAPI.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,6 @@
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.13\\microsoft.entityframeworkcore.design.6.0.13.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.13\\microsoft.entityframeworkcore.relational.6.0.13.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.13\\microsoft.entityframeworkcore.sqlserver.6.0.13.nupkg.sha512",
-    "C:\\Users\\Balasubramaniam\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.13\\microsoft.entityframeworkcore.tools.6.0.13.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
