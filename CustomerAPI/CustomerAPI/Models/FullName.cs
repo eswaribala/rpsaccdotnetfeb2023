@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CustomerAPI.Models
 {
+    /*
     [Owned]
     public class FullName
     {
@@ -14,4 +15,5 @@ namespace CustomerAPI.Models
         public string? MiddleName { get; set; }
         
     }
+    */
 }

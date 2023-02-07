@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace CustomerAPI.Models
 {
@@ -8,5 +9,15 @@ namespace CustomerAPI.Models
     {
         [Column("CompanyType")]
         public CompanyType CompanyType { get; set; }
+
+
+
+        [JsonConstructor]
+        public Corporate(long customerId, string? firstName, string? lastName, string? middleName, long contactNo, string? email, string? password, CompanyType companyType) : base(customerId, firstName, lastName, middleName, contactNo, email, password)
+        {
+            this.CompanyType= companyType;
+        }
+
+
     }
 }

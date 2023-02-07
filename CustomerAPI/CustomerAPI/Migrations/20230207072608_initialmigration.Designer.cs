@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CustomerAPI.Migrations
 {
     [DbContext(typeof(BankingContext))]
-    [Migration("20230206165335_MyFirstMigration")]
-    partial class MyFirstMigration
+    [Migration("20230207072608_initialmigration")]
+    partial class initialmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -78,6 +78,18 @@ namespace CustomerAPI.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Email");
 
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("FirstName");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("LastName");
+
+                    b.Property<string>("MiddleName")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("MiddleName");
+
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Password");
@@ -122,36 +134,6 @@ namespace CustomerAPI.Migrations
                         .IsRequired();
 
                     b.Navigation("Customer");
-                });
-
-            modelBuilder.Entity("CustomerAPI.Models.Customer", b =>
-                {
-                    b.OwnsOne("CustomerAPI.Models.FullName", "FullName", b1 =>
-                        {
-                            b1.Property<long>("CustomerId")
-                                .HasColumnType("bigint");
-
-                            b1.Property<string>("FirstName")
-                                .HasColumnType("nvarchar(max)")
-                                .HasColumnName("FirstName");
-
-                            b1.Property<string>("LastName")
-                                .HasColumnType("nvarchar(max)")
-                                .HasColumnName("LastName");
-
-                            b1.Property<string>("MiddleName")
-                                .HasColumnType("nvarchar(max)")
-                                .HasColumnName("MiddleName");
-
-                            b1.HasKey("CustomerId");
-
-                            b1.ToTable("Customer");
-
-                            b1.WithOwner()
-                                .HasForeignKey("CustomerId");
-                        });
-
-                    b.Navigation("FullName");
                 });
 
             modelBuilder.Entity("CustomerAPI.Models.Corporate", b =>

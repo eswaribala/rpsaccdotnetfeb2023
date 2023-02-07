@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace CustomerAPI.Models
 {
@@ -10,5 +11,15 @@ namespace CustomerAPI.Models
         public Gender Gender { get; set; }
         [Column("DOB")]
         public DateTime DOB { get; set; }
+
+
+        
+        [JsonConstructor]
+        public Individual(long customerId, string? firstName, string? lastName, string? middleName, long contactNo, string? email, string? password,DateTime DOB, Gender gender) : base(customerId, firstName,  lastName, middleName, contactNo, email, password)
+        {
+            this.Gender = gender;
+            this.DOB = DOB;
+        }
+        
     }
 }
