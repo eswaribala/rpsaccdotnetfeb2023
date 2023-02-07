@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "278quV5oCo4xgV74gP3/tH3b9GGOrRqlTeMq4p7xLw2DfZ65oXmIWuLpmcHMEFp4QzBfRYZDoXJbJR1VFtCfGA==",
+  "dgSpecHash": "NMcltaHc1Rs3Q7/ZuunqWRlTminJ5Bx3WBhi1wzOEz/CAPcny2+qHtjw+gN+EmHwA1rAY2FTyTimxiNErYiNpg==",
   "success": true,
   "projectFilePath": "G:\\Local disk\\AccentureTrainingFeb2023\\CustomerAPI\\CustomerAPI\\CustomerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Balasubramaniam\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
