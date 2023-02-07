@@ -24,34 +24,47 @@ namespace CustomerAPI.Controllers
 
         // GET: api/<CustomersController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        [MapToApiVersion("2.0")]
+        public Task<IEnumerable<Customer>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return this.customerRepo.GetAllCustomers();
         }
 
         // GET api/<CustomersController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{CustomerId}")]
+        public Task<Customer> Get(long CustomerId)
         {
-            return "value";
+            return this.customerRepo.GetCustomerById(CustomerId);
         }
 
         // POST api/<CustomersController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post([FromBody] Customer customer)
         {
+            await this.customerRepo.AddCustomer(customer);
+            return CreatedAtAction(nameof(Get),
+                           new { id = customer.CustomerId }, customer);
         }
 
         // PUT api/<CustomersController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public async Task<IActionResult> Put([FromBody] Customer customer)
         {
+            await this.customerRepo.UpdateCustomer(customer);
+            return CreatedAtAction(nameof(Get),
+                           new { id = customer.CustomerId }, customer);
         }
 
         // DELETE api/<CustomersController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{CustomerId}")]
+        public async Task<IActionResult> Delete(long CustomerId)
         {
+
+            if (await this.customerRepo.DeleteCustomer(CustomerId))
+                return new OkResult();
+            else
+                return new BadRequestResult();
+
         }
     }
 }
