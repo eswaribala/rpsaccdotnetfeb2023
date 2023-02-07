@@ -1,0 +1,35 @@
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Testing!123"  -p 1408:1433 --name sql1 -h sql1 -d microsoft/mssql-server-linux
+
+docker exec -it sql1 /opt/mssql-tools/bin/sqlcmd -U sa -P Testing!123
+
+docker exec -it sql1 "bash"
+
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA 
+
+get password:<type password>
+
+SELECT Name from sys.Databases;
+GO
+
+
+
+                      pod name
+kubectl exec -it myapp-db-deployment-789b766d79-kxvcq -- /bin/bash
+-----------------------
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'Vignesh@95' -Q 'CREATE DATABASE RPSDB'
+------------------------------
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'Vignesh@95' -Q 'SELECT name FROM master.dbo.sysdatabases'
+----------------------------------
+kubectl expose deployment mssql  --name=mssql-service
+
+kubectl port-forward service/demo 8070:8070
+
+kubectl port-forward pod/sqlserverpayroll-8c58fc75d-8bjh9 5789:1433
+
+mssql-cli -S 127.0.0.1,5789 -U sa
+
+
+mcr.microsoft.com/dotnet/core/runtime:3.1-bionic
+
+
+Data Source=127.0.0.1,5789;Initial Catalog=RPSDB;User ID=sa;Password=***********
