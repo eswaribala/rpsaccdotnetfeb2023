@@ -7,7 +7,7 @@ namespace CustomerAPI.Repositories
        Task<Customer> AddCustomer(Customer Customer);
         Task<Customer> UpdateCustomer(Customer customer);
         Task<bool> DeleteCustomer(long CustomerId);
-        IEnumerable<Customer> GetAllCustomers();
+        Task<IEnumerable<Customer>> GetAllCustomers();
         Task<Customer> GetCustomerById(long CustomerId);
 
     }

@@ -40,19 +40,38 @@ namespace CustomerAPI.Repositories
                 return false;
         }
 
-        public IEnumerable<Customer> GetAllCustomers()
+        public async Task<IEnumerable<Customer>> GetAllCustomers()
         {
-            throw new NotImplementedException();
+            return await this._dbContext.Customers.ToListAsync();
         }
 
-        public Task<Customer> GetCustomerById(long CustomerId)
+        public async Task<Customer> GetCustomerById(long CustomerId)
         {
-            throw new NotImplementedException();
+            var result = await this._dbContext.Customers.FirstOrDefaultAsync(c =>
+            c.CustomerId == CustomerId);
+#pragma warning disable CS8603 // Possible null reference return.
+            return result;
+#pragma warning restore CS8603 // Possible null reference return.
         }
 
-        public Task<Customer> UpdateCustomer(Customer customer)
+        public async Task<Customer> UpdateCustomer(Customer customer)
         {
-            throw new NotImplementedException();
+            var result = await _dbContext.Customers
+                 .FirstOrDefaultAsync(c => c.CustomerId == customer.CustomerId);
+
+            if (result != null)
+            {
+                result.ContactNo = customer.ContactNo;
+                result.Email = customer.Email;
+
+
+
+                await _dbContext.SaveChangesAsync();
+
+                return result;
+            }
+
+            return null;
         }
     }
 }
