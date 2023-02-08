@@ -271,3 +271,4 @@ G:\Local disk\AccentureTrainingFeb2023\CustomerApp\CustomerApp\obj\Debug\net6.0\
 G:\Local disk\AccentureTrainingFeb2023\CustomerApp\CustomerApp\obj\Debug\net6.0\CustomerApp.pdb
 G:\Local disk\AccentureTrainingFeb2023\CustomerApp\CustomerApp\obj\Debug\net6.0\CustomerApp.genruntimeconfig.cache
 G:\Local disk\AccentureTrainingFeb2023\CustomerApp\CustomerApp\obj\Debug\net6.0\ref\CustomerApp.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerApp\CustomerApp\bin\Debug\net6.0\reCAPTCHA.AspNetCore.dll
