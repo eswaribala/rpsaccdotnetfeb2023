@@ -22,7 +22,7 @@ namespace CustomerApp.Pages.Corporates
 
         public IActionResult OnGet()
         {
-            List<SelectListItem> Companies=new List<SelectListItem>();
+            List<SelectListItem> Companies = new List<SelectListItem>();
             Companies.Add(new SelectListItem { Text = "Public", Value = "Public" });
             Companies.Add(new SelectListItem { Text = "NGO", Value = "NGO" });
             Companies.Add(new SelectListItem { Text = "Private", Value = "Private" });
@@ -44,6 +44,10 @@ namespace CustomerApp.Pages.Corporates
                 return Page();
             }
 
+           
+                
+           
+            //Corporate.CompanyType = message;
             _context.Corporates.Add(Corporate);
             await _context.SaveChangesAsync();
 

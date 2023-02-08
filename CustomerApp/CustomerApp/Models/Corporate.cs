@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace CustomerApp.Models
 {
-    public enum CompanyType { Public,NGO,MNC}
+    public enum CompanyType { Public,NGO,MNC,Private,Government}
     [Table("Corporate")]
     public class Corporate:Customer
     {
