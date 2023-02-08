@@ -8,12 +8,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using CustomerApp.Contexts;
 using CustomerApp.Models;
 
-namespace CustomerApp.Pages.Addresses
+namespace CustomerApp.Pages.Individuals
 {
     public class CreateModel : PageModel
     {
         private readonly CustomerApp.Contexts.BankingContext _context;
 
+        public List<SelectListItem> GenderList { get; set; }
         public CreateModel(CustomerApp.Contexts.BankingContext context)
         {
             _context = context;
@@ -21,14 +22,16 @@ namespace CustomerApp.Pages.Addresses
 
         public IActionResult OnGet()
         {
-        ViewData["CustomerId"] = new SelectList(_context.Customers, "CustomerId", "Email");
-        ViewData["CityId"] = new SelectList(_context.Cities, "Name", "Name");
+            List<SelectListItem> list = new List<SelectListItem>();
+            list.Add(new SelectListItem() { Text="MALE",Value="MALE"});
+            list.Add(new SelectListItem() { Text = "FEMALE", Value = "FEMALE" });
+            list.Add(new SelectListItem() { Text = "TRANSGENDER", Value = "TRANSGENDER" });
+            this.GenderList = list;
             return Page();
         }
 
-
         [BindProperty]
-        public Address Address { get; set; }
+        public Individual Individual { get; set; }
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
@@ -39,7 +42,7 @@ namespace CustomerApp.Pages.Addresses
                 return Page();
             }
 
-            _context.Addresses.Add(Address);
+            _context.Individuals.Add(Individual);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

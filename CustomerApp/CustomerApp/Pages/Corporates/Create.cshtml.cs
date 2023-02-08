@@ -8,12 +8,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using CustomerApp.Contexts;
 using CustomerApp.Models;
 
-namespace CustomerApp.Pages.Addresses
+namespace CustomerApp.Pages.Corporates
 {
     public class CreateModel : PageModel
     {
         private readonly CustomerApp.Contexts.BankingContext _context;
 
+        public List<SelectListItem> CompanyList { get; set; }   
         public CreateModel(CustomerApp.Contexts.BankingContext context)
         {
             _context = context;
@@ -21,14 +22,18 @@ namespace CustomerApp.Pages.Addresses
 
         public IActionResult OnGet()
         {
-        ViewData["CustomerId"] = new SelectList(_context.Customers, "CustomerId", "Email");
-        ViewData["CityId"] = new SelectList(_context.Cities, "Name", "Name");
+            List<SelectListItem> Companies=new List<SelectListItem>();
+            Companies.Add(new SelectListItem { Text = "Public", Value = "Public" });
+            Companies.Add(new SelectListItem { Text = "NGO", Value = "NGO" });
+            Companies.Add(new SelectListItem { Text = "Private", Value = "Private" });
+            Companies.Add(new SelectListItem { Text = "MNC", Value = "MNC" });
+            Companies.Add(new SelectListItem { Text = "Government", Value = "Government" });
+            this.CompanyList = Companies;
             return Page();
         }
 
-
         [BindProperty]
-        public Address Address { get; set; }
+        public Corporate Corporate { get; set; }
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
@@ -39,7 +44,7 @@ namespace CustomerApp.Pages.Addresses
                 return Page();
             }
 
-            _context.Addresses.Add(Address);
+            _context.Corporates.Add(Corporate);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
