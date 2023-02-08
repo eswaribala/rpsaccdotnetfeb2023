@@ -15,7 +15,7 @@ namespace CustomerApp.Contexts
         public DbSet<Individual> Individuals { get; set; }
         public DbSet<Corporate> Corporates { get; set; }
         public DbSet<Address> Addresses { get;set; }
-
+        public DbSet<City> Cities { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,6 +25,7 @@ namespace CustomerApp.Contexts
             modelBuilder.Entity<Individual>().ToTable("Individual");
             modelBuilder.Entity<Corporate>().ToTable("Corporate");
             modelBuilder.Entity<Address>().ToTable("Address");
+            modelBuilder.Entity<City>().ToTable("City");
         }
     }
 }

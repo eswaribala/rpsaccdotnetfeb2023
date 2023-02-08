@@ -31,7 +31,7 @@ namespace CustomerApp.Models
        // [StringLength(10)]
         public long ContactNo { get; set; }
         [Column("Email")]
-       
+       // [ReputableEmail]
         [EmailAddress]
         [Required]
         public string? Email { get; set; }

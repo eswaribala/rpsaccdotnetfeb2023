@@ -58,6 +58,24 @@ namespace CustomerApp.Migrations
                     b.ToTable("Address", (string)null);
                 });
 
+            modelBuilder.Entity("CustomerApp.Models.City", b =>
+                {
+                    b.Property<int>("CityId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("CityId");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CityId"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Name");
+
+                    b.HasKey("CityId");
+
+                    b.ToTable("City", (string)null);
+                });
+
             modelBuilder.Entity("CustomerApp.Models.Customer", b =>
                 {
                     b.Property<long>("CustomerId")
@@ -72,14 +90,17 @@ namespace CustomerApp.Migrations
                         .HasColumnName("ContactNo");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Email");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("FirstName");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("LastName");
 
