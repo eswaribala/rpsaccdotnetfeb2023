@@ -1,6 +1,8 @@
 using CustomerApp.Contexts;
 using CustomerApp.Services;
 using Microsoft.EntityFrameworkCore;
+using reCAPTCHA.AspNetCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,7 @@ ConfigurationManager configuration = builder.Configuration;
 builder.Services.AddDbContext<BankingContext>(options => options
 .UseSqlServer(configuration.GetConnectionString("DbConn")));
 builder.Services.AddSingleton<IEmailReputation, EmailReputation>();
+builder.Services.AddRecaptcha(configuration.GetSection("RecaptchaSettings"));
 // Add services to the container.
 builder.Services.AddRazorPages();
 
