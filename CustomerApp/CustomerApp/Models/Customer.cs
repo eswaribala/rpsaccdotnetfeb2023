@@ -15,17 +15,25 @@ namespace CustomerApp.Models
         public long CustomerId { get; set; }
         //public FullName? FullName { get; set; }
 
+       [RegularExpression(@"^[A-Z]+[a-zA-Z]*$",ErrorMessage ="First Name Should be in alphabets only")]
+       
         [Column("FirstName")]
+        [Required]
         public string? FirstName { get; set; }
         [Column("LastName")]
+       [RegularExpression(@"^[A-Z]+[a-zA-Z]*$", ErrorMessage = "Last Name Should be in alphabets only")]
+        [Required]
         public string? LastName { get; set; }
         [Column("MiddleName")]
+        [RegularExpression(@"^[A-Z]+[a-zA-Z]*$", ErrorMessage = "Middle Name Should be in alphabets only")]
         public string? MiddleName { get; set; }
         [Column("ContactNo")]
        // [StringLength(10)]
         public long ContactNo { get; set; }
         [Column("Email")]
-       // [RegularExpression(@"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$",ErrorMessage ="Enter Valid Email Id")]
+       
+        [EmailAddress]
+        [Required]
         public string? Email { get; set; }
         [Column("Password")]
 

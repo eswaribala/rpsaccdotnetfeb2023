@@ -1,4 +1,5 @@
 using CustomerApp.Contexts;
+using CustomerApp.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +11,7 @@ ConfigurationManager configuration = builder.Configuration;
 // Add services to the container.
 builder.Services.AddDbContext<BankingContext>(options => options
 .UseSqlServer(configuration.GetConnectionString("DbConn")));
-
+builder.Services.AddSingleton<IEmailReputation, EmailReputation>();
 // Add services to the container.
 builder.Services.AddRazorPages();
 
