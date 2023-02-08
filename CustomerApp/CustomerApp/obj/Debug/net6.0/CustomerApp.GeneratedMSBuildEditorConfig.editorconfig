@@ -15,6 +15,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = G:\Local disk\AccentureTrainingFeb2023\CustomerApp\CustomerApp
 build_property._RazorSourceGeneratorDebug = 
 
+[G:/Local disk/AccentureTrainingFeb2023/CustomerApp/CustomerApp/Pages/Addresses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkcmVzc2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Local disk/AccentureTrainingFeb2023/CustomerApp/CustomerApp/Pages/Addresses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkcmVzc2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Local disk/AccentureTrainingFeb2023/CustomerApp/CustomerApp/Pages/Addresses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkcmVzc2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Local disk/AccentureTrainingFeb2023/CustomerApp/CustomerApp/Pages/Addresses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkcmVzc2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Local disk/AccentureTrainingFeb2023/CustomerApp/CustomerApp/Pages/Addresses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkcmVzc2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/Local disk/AccentureTrainingFeb2023/CustomerApp/CustomerApp/Pages/Cities/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2l0aWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
