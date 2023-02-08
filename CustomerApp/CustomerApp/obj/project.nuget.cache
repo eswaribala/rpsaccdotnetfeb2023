@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qxcLQj4FPOxSLt628NMidwvpoIyXRYGBcrHPYRC6U9dLSGTjM13jRi3FLr5S+qCc8eFPD09fl/JhdYF6hAkpXA==",
+  "dgSpecHash": "mbSupfccFQH7lJRGxcE146jFhFfk1uojraH7YC9JoyYlBXz8TuXmV1iFfOMNlpMqL4kWgC7lLq3n/OCyifmF6w==",
   "success": true,
   "projectFilePath": "G:\\Local disk\\AccentureTrainingFeb2023\\CustomerApp\\CustomerApp\\CustomerApp.csproj",
   "expectedPackageFiles": [
@@ -85,6 +85,7 @@
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\nuget.projectmodel\\6.3.1\\nuget.projectmodel.6.3.1.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\nuget.protocol\\6.3.1\\nuget.protocol.6.3.1.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\nuget.versioning\\6.3.1\\nuget.versioning.6.3.1.nupkg.sha512",
+    "C:\\Users\\Balasubramaniam\\.nuget\\packages\\recaptcha.aspnetcore\\3.0.10\\recaptcha.aspnetcore.3.0.10.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

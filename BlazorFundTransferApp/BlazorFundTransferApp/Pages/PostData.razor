@@ -1,0 +1,64 @@
+﻿@page "/post"
+@inject HttpClient Http
+<h3>PostData</h3>
+@if (Posts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+<table>
+    <thead>
+        <tr>
+        <th>
+           ID
+        </th>
+        <th>
+           User Id
+        </th>
+        <th>
+           Title
+        </th>
+        <th>
+           Body
+        </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var Post in Posts)
+    {
+        <tr>
+            <td>
+                @Post.Id
+            </td>
+             <td>
+                @Post.UserId
+            </td>
+             <td>
+                @Post.Title
+            </td>
+             <td>
+                @Post.Body
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+}
+@code {
+    public Post[]? Posts{ get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        Posts = await Http.GetFromJsonAsync<Post[]>("sample-data/posts.json");
+    }
+
+    public class Post
+    {
+        public int UserId{ get; set; }
+        public int Id{ get; set; }
+        public string? Title{ get; set; }
+        public string? Body{ get; set; }
+    }
+
+
+}
