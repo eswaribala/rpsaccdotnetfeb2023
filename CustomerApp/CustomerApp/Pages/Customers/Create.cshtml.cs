@@ -22,8 +22,9 @@ namespace CustomerApp.Pages.Customers
             _recaptcha = recaptcha; 
         }
 
-        public IActionResult OnGet()
+        public IActionResult OnGet(string returnUrl = null)
         {
+            ReturnUrl = returnUrl;
             return Page();
         }
 
@@ -36,8 +37,9 @@ namespace CustomerApp.Pages.Customers
         {
             var recaptcha = await _recaptcha.Validate(this.HttpContext.Request);
             if (!recaptcha.success)
+           
                 ModelState.AddModelError("Recaptcha", "Error Validating Captcha");
-
+              
             returnUrl ??= Url.Content("~/");
 
 

@@ -13,7 +13,8 @@ namespace CustomerApp.Pages.Corporates
     public class CreateModel : PageModel
     {
         private readonly CustomerApp.Contexts.BankingContext _context;
-
+        [BindProperty]
+        public List<string> CompanyTypeArr { get; set; }
         public List<SelectListItem> CompanyList { get; set; }   
         public CreateModel(CustomerApp.Contexts.BankingContext context)
         {
@@ -43,10 +44,13 @@ namespace CustomerApp.Pages.Corporates
             {
                 return Page();
             }
+            CompanyType ConvType;
+            var CompanyTypeData = string.Join(",", CompanyTypeArr.ToArray());
+            if(Enum.TryParse<CompanyType>(CompanyTypeArr[0], out ConvType))
+            {
+                Corporate.CompanyType = ConvType;
+            }
 
-           
-                
-           
             //Corporate.CompanyType = message;
             _context.Corporates.Add(Corporate);
             await _context.SaveChangesAsync();

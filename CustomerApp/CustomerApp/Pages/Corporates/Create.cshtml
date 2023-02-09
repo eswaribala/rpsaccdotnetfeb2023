@@ -23,8 +23,8 @@
                       <label for="@Company.Value">@Company.Text</label>
                     </td>
                     <td>
-                        <input id="@Company.Value" type="radio" 
-                       asp-for="Corporate.CompanyType" value="@Company.Value" />
+                        <input id="@Company.Value" type="checkbox" 
+                      name="CompanyTypeArr" value="@Company.Value" />
                     </td>
                 }
                 </tr>
