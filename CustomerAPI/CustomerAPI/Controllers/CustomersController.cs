@@ -15,11 +15,12 @@ namespace CustomerAPI.Controllers
 
         private ICustomerRepo customerRepo;
         private IConfiguration configuration;
-
-        public CustomersController(ICustomerRepo _customerRepo, IConfiguration _configuration)
+        private readonly ILogger<CustomersController> _logger;
+        public CustomersController(ICustomerRepo _customerRepo, ILogger<CustomersController> logger,IConfiguration _configuration)
         {
             this.customerRepo = _customerRepo;
             this.configuration = _configuration;
+            this._logger= logger;   
         }
 
         // GET: api/<CustomersController>
@@ -27,6 +28,7 @@ namespace CustomerAPI.Controllers
         [MapToApiVersion("2.0")]
         public Task<IEnumerable<Customer>> Get()
         {
+            _logger.LogInformation($"Data Fetched At {DateTime.Now}");
             return this.customerRepo.GetAllCustomers();
         }
 
