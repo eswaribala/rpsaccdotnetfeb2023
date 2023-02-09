@@ -66,3 +66,13 @@ G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\obj\Debug\net6.0\
 G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\obj\Debug\net6.0\CustomerAPI.genruntimeconfig.cache
 G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\obj\Debug\net6.0\ref\CustomerAPI.dll
 G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\VaultSharp.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\Steeltoe.Common.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\Steeltoe.Common.Abstractions.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\Steeltoe.Common.Http.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\Steeltoe.Discovery.Abstractions.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.Abstractions.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.CloudFoundryBase.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.ConfigServerBase.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.ConfigServerCore.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.PlaceholderBase.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\CustomerAPI\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll

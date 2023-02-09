@@ -4,10 +4,39 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using Serilog.Sinks.Elasticsearch;
+using Steeltoe.Extensions.Configuration.ConfigServer;
 
 var builder = WebApplication.CreateBuilder(args);
+var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+builder.Configuration.AddConfigServer();
 //External Configuration
-ConfigurationManager configuration = builder.Configuration;
+//ConfigurationManager configuration = builder.Configuration;
+
+var configuration = new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile(
+        $"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json",
+        optional: true)
+    .Build();
+Log.Logger = new LoggerConfiguration()
+    .Enrich.FromLogContext()
+
+    .WriteTo.Debug()
+    .WriteTo.Console()
+    .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new
+        Uri(configuration["ElasticConfiguration:Uri"]))
+    {
+        AutoRegisterTemplate = true,
+        IndexFormat = $"CustomerIndex-{DateTime.UtcNow:yyyy-MM}"
+    })
+    .Enrich.WithProperty("Environment", environment)
+    .ReadFrom.Configuration(configuration)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
 // Add services to the container.
 
 // Add services to the container.

@@ -23,3 +23,12 @@ G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\obj\Debug\docker-compose.dcpr
 G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\obj\Debug\docker-compose.dcproj.CopyComplete
 G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\VaultSharp.dll
 G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\Newtonsoft.Json.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\Steeltoe.Extensions.Configuration.ConfigServerBase.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\Steeltoe.Common.Abstractions.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\Steeltoe.Discovery.Abstractions.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\Steeltoe.Extensions.Configuration.PlaceholderBase.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\Steeltoe.Extensions.Configuration.CloudFoundryBase.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\Steeltoe.Common.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\Steeltoe.Common.Http.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\Steeltoe.Extensions.Configuration.Abstractions.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\System.Reflection.MetadataLoadContext.dll
