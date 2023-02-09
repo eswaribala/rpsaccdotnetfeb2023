@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3pcMpn+E0JJS5UjWqwixFG/k7l/S8068rZ5ranquw8+0AUFu6LyVugzWQcx0Kae6z27TbTjApJbtoMqoMCjrow==",
+  "dgSpecHash": "tuONKryw2XOpTt/nCaZzqxEHqAEpzn0u4BPPo/854sscP7zH7zVyp40b5hBJ608snOJhXGpKjR8vfSt0ILO1Ew==",
   "success": true,
   "projectFilePath": "G:\\Local disk\\AccentureTrainingFeb2023\\CustomerAPI\\CustomerAPI\\CustomerAPI.csproj",
   "expectedPackageFiles": [
@@ -57,7 +57,8 @@
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Balasubramaniam\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\Balasubramaniam\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\Balasubramaniam\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Balasubramaniam\\.nuget\\packages\\vaultsharp\\1.7.0.4\\vaultsharp.1.7.0.4.nupkg.sha512"
   ],
   "logs": []
 }

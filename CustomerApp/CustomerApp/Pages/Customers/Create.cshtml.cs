@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using CustomerApp.Contexts;
 using CustomerApp.Models;
 using reCAPTCHA.AspNetCore;
+using reCAPTCHA.AspNetCore.Attributes;
 
 namespace CustomerApp.Pages.Customers
 {
@@ -32,6 +33,7 @@ namespace CustomerApp.Pages.Customers
         public Customer Customer { get; set; }
         
 
+    
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
@@ -40,7 +42,7 @@ namespace CustomerApp.Pages.Customers
            
                 ModelState.AddModelError("Recaptcha", "Error Validating Captcha");
               
-            returnUrl ??= Url.Content("~/");
+            //returnUrl ??= Url.Content("~/");
 
 
             if (!ModelState.IsValid)
