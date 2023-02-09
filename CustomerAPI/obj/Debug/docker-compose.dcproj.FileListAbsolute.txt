@@ -21,3 +21,5 @@ G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\CustomerAPI.pdb
 G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\obj\Debug\docker-compose.dcproj.CopyComplete
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\VaultSharp.dll
+G:\Local disk\AccentureTrainingFeb2023\CustomerAPI\bin\Debug\Newtonsoft.Json.dll
