@@ -17,9 +17,9 @@ Dictionary<String, Object> data = new VaultConfiguration(configuration).GetDBCre
 Console.WriteLine(data);
 SqlConnectionStringBuilder providerCs = new SqlConnectionStringBuilder();
 providerCs.InitialCatalog = data["dockerdbname"].ToString();
-providerCs.UserID = data["dockerusername"].ToString();
-providerCs.Password = data["dockerpassword"].ToString();
-providerCs.DataSource = "localhost,1406";
+providerCs.UserID = data["username"].ToString();
+providerCs.Password = data["password"].ToString();
+providerCs.DataSource = data["machinename"].ToString() + "\\" + data["servername"].ToString();
 
 //providerCs.UserID = CryptoService2.Decrypt(ConfigurationManager.AppSettings["UserId"]);
 providerCs.MultipleActiveResultSets = true;
