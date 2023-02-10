@@ -12,21 +12,21 @@ namespace CsharpFundamentals
         public static void Main()
         {
             //Array of accounts
-            SavingsAccount[] Accounts = new SavingsAccount[5];
+            Account[] Accounts = new CurrentAccount[5];
 
             for(int i = 0; i < Accounts.Length; i++)
             {
                 //constructor
-                Accounts[i] = new SavingsAccount(i, AccountType.SAVINGS, new Random().Next(5000, 10000), new DateTime(2023, 2, new Random().Next(25)));
+                Accounts[i] = new CurrentAccount(i, AccountType.SAVINGS, new Random().Next(5000, 10000), new DateTime(2023, 2, new Random().Next(25)));
                 //setter
-                Accounts[i].InterestRate = 0.865f;
+               // Accounts[i].OverDraftLimit = 1000000;
               
             }
 
             foreach(var Account in Accounts)
             {
-                Console.WriteLine("Account No{0}, Type{1}, Balance{2}, DOC{3},Interest Rate{4}",
-                    Account.AccountId,Account.AccountType,Account.Balance,Account.DOC, Account.InterestRate);
+                Console.WriteLine("Account No{0}, Type{1}, Balance{2}, DOC{3}",
+                    Account.AccountId,Account.AccountType,Account.Balance,Account.DOC);
                 Console.WriteLine("Generated OTP={0}", Account.GenerateOTP());
             }
         }
