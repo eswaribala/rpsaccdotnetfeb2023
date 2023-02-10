@@ -1,0 +1,17 @@
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\bin\Debug\net6.0\CsharpFundamentals.exe
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\bin\Debug\net6.0\CsharpFundamentals.deps.json
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\bin\Debug\net6.0\CsharpFundamentals.runtimeconfig.json
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\bin\Debug\net6.0\CsharpFundamentals.dll
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\bin\Debug\net6.0\CsharpFundamentals.pdb
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.csproj.AssemblyReference.cache
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.GeneratedMSBuildEditorConfig.editorconfig
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.AssemblyInfoInputs.cache
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.AssemblyInfo.cs
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.csproj.CoreCompileInputs.cache
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.dll
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\refint\CsharpFundamentals.dll
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.pdb
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.genruntimeconfig.cache
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\ref\CsharpFundamentals.dll
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\bin\Debug\net6.0\CsharpFundamentals.xml
+G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.xml
