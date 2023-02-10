@@ -42,7 +42,7 @@ namespace CsharpFundamentals
                 Transactions.Add(i, new Transaction()
                 {
                     TransactionId = new Random().Next(1, 10000000),
-                    TransactionAmount = new Random().Next(500, 5000000),
+                    TransactionAmount = new Random().Next(500, 5000),
                     DOT = new DateTime(2023, 2, new Random().Next(1, 25)),
                     Account = new CurrentAccount(100, AccountType.SAVINGS,
                   new Random().Next(5000, 10000),
@@ -50,14 +50,22 @@ namespace CsharpFundamentals
                 });
 
             }
+            
+
+            List<Transaction> TransactionList=new List<Transaction>();
 
             //Retrieve Transactions
             foreach(KeyValuePair<long,Transaction> transaction in Transactions){
-
-                Console.WriteLine("Key{0},Transaction Id{1}, Amount{2}",
-                   transaction.Key, transaction.Value.TransactionId, transaction.Value.TransactionAmount);
+                TransactionList.Add(transaction.Value);
+                
             }
 
+            TransactionList.Sort(new TransactionSorter());
+
+            foreach (var Tran in TransactionList)
+            {
+                Console.WriteLine("TransactionId={0}, Amount={1}", Tran.TransactionId, Tran.TransactionAmount);            
+             }
 
         }
     }
