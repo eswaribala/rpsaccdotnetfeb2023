@@ -19,7 +19,7 @@ namespace CsharpFundamentals
     public class Fundamental
     {
 
-        public static void Main()
+        public static void main()
         {
             Console.WriteLine("Ready to Learn c#");
             double ROI = 0.65;
