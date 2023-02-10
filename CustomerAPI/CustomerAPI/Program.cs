@@ -12,9 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 builder.Configuration.AddConfigServer();
 //External Configuration
-//ConfigurationManager configuration = builder.Configuration;
+ConfigurationManager configurationServer = builder.Configuration;
 
-var configuration = new ConfigurationBuilder()
+var configuration = new ConfigurationBuilder()   
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .AddJsonFile(
         $"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json",
@@ -42,7 +42,7 @@ builder.Host.UseSerilog();
 // Add services to the container.
 //builder.Services.AddDbContext<BankingContext>(options => options
 //.UseSqlServer(configuration.GetConnectionString("DbConn")));
-Dictionary<String, Object> data = new VaultConfiguration(configuration).GetDBCredentials().Result;
+Dictionary<String, Object> data = new VaultConfiguration(configurationServer).GetDBCredentials().Result;
 Console.WriteLine(data);
 SqlConnectionStringBuilder providerCs = new SqlConnectionStringBuilder();
 providerCs.InitialCatalog = data["dockerdbname"].ToString();
