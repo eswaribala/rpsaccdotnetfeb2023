@@ -11,19 +11,24 @@ namespace CsharpFundamentals
     {
         public static void Main()
         {
-            //Array of accounts
-            Account[] Accounts = new CurrentAccount[5];
+            //List of accounts
+            IList<Account> Accounts = new List<Account>();
 
-            for(int i = 0; i < Accounts.Length; i++)
+            for(int i = 0; i < 100; i++)
             {
                 //constructor
-                Accounts[i] = new CurrentAccount(i, AccountType.SAVINGS, new Random().Next(5000, 10000), new DateTime(2023, 2, new Random().Next(1,25)));
+              Accounts.Add (new CurrentAccount(i, AccountType.SAVINGS, 
+                  new Random().Next(5000, 10000), 
+                  new DateTime(2023, 2, new Random().Next(1,25))));
                 //setter
                // Accounts[i].OverDraftLimit = 1000000;
               
             }
 
-            foreach(var Account in Accounts)
+            Accounts.Add(new CurrentAccount(100, AccountType.SAVINGS,
+                  new Random().Next(5000, 10000),
+                  new DateTime(2023, 2, new Random().Next(1, 25))));
+            foreach (var Account in Accounts)
             {
                 Console.WriteLine("Account No{0}, Type{1}, Balance{2}, DOC{3}",
                     Account.AccountId,Account.AccountType,Account.Balance,Account.DOC);
