@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpFundamentals.Models
 {
-    public class Account
+    public abstract class Account
     {
         public long AccountId { get; set; }
         public AccountType AccountType { get; set; }
