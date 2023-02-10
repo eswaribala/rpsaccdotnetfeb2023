@@ -17,7 +17,7 @@ namespace CsharpFundamentals
             for(int i = 0; i < Accounts.Length; i++)
             {
                 //constructor
-                Accounts[i] = new CurrentAccount(i, AccountType.SAVINGS, new Random().Next(5000, 10000), new DateTime(2023, 2, new Random().Next(25)));
+                Accounts[i] = new CurrentAccount(i, AccountType.SAVINGS, new Random().Next(5000, 10000), new DateTime(2023, 2, new Random().Next(1,25)));
                 //setter
                // Accounts[i].OverDraftLimit = 1000000;
               
