@@ -14,6 +14,12 @@ namespace CsharpFundamentals.Models
         public long Balance { get; set; }   
         public DateTime DOC { get; set; }
 
-
+        protected Account(long accountId, AccountType accountType, long balance, DateTime dOC)
+        {
+            AccountId = accountId;
+            AccountType = accountType;
+            Balance = balance;
+            DOC = dOC;
+        }
     }
 }

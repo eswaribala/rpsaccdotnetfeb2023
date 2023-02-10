@@ -8,6 +8,10 @@ namespace CsharpFundamentals.Models
 {
     public class CurrentAccount:Account
     {
+        public CurrentAccount(long accountId, AccountType accountType, long balance, DateTime dOC) : base(accountId, accountType, balance, dOC)
+        {
+        }
+
         public long OverDraftLimit { get; set; }
     }
 }

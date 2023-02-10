@@ -16,14 +16,10 @@ namespace CsharpFundamentals
 
             for(int i = 0; i < Accounts.Length; i++)
             {
-                Accounts[i] = new SavingsAccount()
-                {
-                    AccountId = i,
-                    AccountType = AccountType.SAVINGS,
-                    Balance = new Random().Next(5000, 10000),
-                    DOC = new DateTime(2023, 2, new Random().Next(25)),
-                    InterestRate = 0.865f
-                };
+                //constructor
+                Accounts[i] = new SavingsAccount(i, AccountType.SAVINGS, new Random().Next(5000, 10000), new DateTime(2023, 2, new Random().Next(25)));
+                //setter
+                Accounts[i].InterestRate = 0.865f;
               
             }
 
