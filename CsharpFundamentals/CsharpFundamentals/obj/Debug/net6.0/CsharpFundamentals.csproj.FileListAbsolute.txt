@@ -13,5 +13,3 @@ G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj
 G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.pdb
 G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.genruntimeconfig.cache
 G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\ref\CsharpFundamentals.dll
-G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\bin\Debug\net6.0\CsharpFundamentals.xml
-G:\Local disk\AccentureTrainingFeb2023\CsharpFundamentals\CsharpFundamentals\obj\Debug\net6.0\CsharpFundamentals.xml

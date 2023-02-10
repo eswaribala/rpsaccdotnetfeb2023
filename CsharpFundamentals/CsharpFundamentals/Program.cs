@@ -15,7 +15,7 @@ namespace CsharpFundamentals
    /// This is Main
    /// </summary>
   ///<remarks>Kick Started</remarks>
-    enum AccountType { SAVINGS,CURRENT,DEMAT,LOAN}
+    public enum AccountType { SAVINGS,CURRENT,DEMAT,LOAN}
     public class Fundamental
     {
 
@@ -34,6 +34,8 @@ namespace CsharpFundamentals
 
             }
 
+            string? path = @"G:\Local disk\dot35\Deepa
+                                  \_netmaterialforreview\UptoException";
             Console.ReadKey();
 
         }
