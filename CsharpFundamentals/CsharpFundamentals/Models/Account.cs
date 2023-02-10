@@ -21,5 +21,10 @@ namespace CsharpFundamentals.Models
             Balance = balance;
             DOC = dOC;
         }
+
+        public long GenerateOTP()
+        {
+            return new Random().Next(1000, 9999);
+        }
     }
 }

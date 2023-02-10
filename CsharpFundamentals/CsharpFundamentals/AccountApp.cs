@@ -27,6 +27,7 @@ namespace CsharpFundamentals
             {
                 Console.WriteLine("Account No{0}, Type{1}, Balance{2}, DOC{3},Interest Rate{4}",
                     Account.AccountId,Account.AccountType,Account.Balance,Account.DOC, Account.InterestRate);
+                Console.WriteLine("Generated OTP={0}", Account.GenerateOTP());
             }
         }
     }
