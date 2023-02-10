@@ -13,5 +13,10 @@ namespace CsharpFundamentals.Models
         }
 
         public long OverDraftLimit { get; set; }
+
+        public override string GenerateOTP()
+        {
+            return "C"+base.GenerateOTP();
+        }
     }
 }

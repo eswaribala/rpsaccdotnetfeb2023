@@ -14,6 +14,9 @@ namespace CsharpFundamentals.Models
 
         public float InterestRate { get; set; }
 
-       
+        public override string GenerateOTP()
+        {
+            return "S"+base.GenerateOTP();
+        }
     }
 }

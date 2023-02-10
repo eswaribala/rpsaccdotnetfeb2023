@@ -22,9 +22,9 @@ namespace CsharpFundamentals.Models
             DOC = dOC;
         }
 
-        public long GenerateOTP()
+        public virtual string GenerateOTP()
         {
-            return new Random().Next(1000, 9999);
+            return Convert.ToString (new Random().Next(1000, 9999));
         }
     }
 }
